@@ -1,0 +1,36 @@
+{
+x++
+arr[x] = $1
+}
+END {
+y = 0
+z = 9
+maxi = 199
+perc = maxi/100
+for (i=1;i<=11;i++)
+{for (x=1;x<200;x++)
+if (arr[x] <= z && arr[x] >= y)
+	{sum++
+	ast[sum] = "*"
+	}
+if (x = 199)
+	{if (z!=100)
+		printf  y "-" z":  "
+	else printf z":  "
+	printf sum/perc"%% " 
+	for (sum in ast)
+	{printf  ast[sum]
+	delete ast[sum]
+	}
+print o
+	y = y + 10
+	z = z + 10
+if (z==109)
+	{z=100
+	y=100
+	}
+	sum = 0
+	}
+	
+}
+}

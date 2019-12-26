@@ -1,0 +1,30 @@
+{x++
+arr[x] = $1
+}
+END {
+y = 0
+z = 9
+for (i=1;i<=11;i++)
+{for (x=1;x<199;x++)
+if (arr[x] <= z && arr[x] >= y)
+	{sum++
+ast[sum] = "*"
+	}
+if (x = 199)
+	{printf  y "-" z": "sum" "
+	for (sum in ast)
+	{printf ast[sum]
+	delete ast[sum]
+	}
+print o
+	y = y + 10
+	z = z + 10
+if (z==109)
+	{z=100
+	y=100
+	}
+	sum = 0
+	}
+	
+}
+}
